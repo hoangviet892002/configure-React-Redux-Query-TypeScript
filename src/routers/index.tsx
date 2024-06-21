@@ -1,5 +1,5 @@
 import { useRoutes } from "react-router-dom";
-import { Home, About, Student } from "../pages";
+import { Home, About, Data } from "../pages";
 function Router() {
   const elements = useRoutes([
     {
@@ -11,8 +11,8 @@ function Router() {
       element: <About />,
     },
     {
-      path: "/student",
-      element: <Student />,
+      path: "/data",
+      element: <Data />,
     },
   ]);
   return <div className="App">{elements}</div>;
